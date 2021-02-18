@@ -1,0 +1,9 @@
+if CASMUTILS_LIBRARY
+casmutils_plugin_includedir=$(includedir)/casmutils/sym
+casmutils_plugin_include_HEADERS = plugins/casm-utilities-group-io/include/casmutils/sym/group-io.hpp
+endif
+
+libcasmutils_la_SOURCES +=\
+                            plugins/casm-utilities-group-io/include/casmutils/sym/group-io.hpp\
+                            plugins/casm-utilities-group-io/lib/group-io.cxx
+
