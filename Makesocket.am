@@ -1,6 +1,7 @@
+AM_CPPFLAGS += -I$(srcdir)/plugins/casm-utilities-group-io/include
 if CASMUTILS_LIBRARY
-casmutils_plugin_includedir=$(includedir)/casmutils/sym
-casmutils_plugin_include_HEADERS = plugins/casm-utilities-group-io/include/casmutils/sym/group-io.hpp
+casmutils_groupio_includedir=$(includedir)/casmutils/sym
+casmutils_groupio_include_HEADERS = plugins/casm-utilities-group-io/include/casmutils/sym/group-io.hpp
 endif
 
 libcasmutils_la_SOURCES +=\
